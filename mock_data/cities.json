@@ -1,0 +1,216 @@
+{
+  "berlin": {
+    "name": "Berlin",
+    "country": "Germany",
+    "continent": "Europe",
+    "lat": 52.52,
+    "lon": 13.405,
+    "iata": "BER",
+    "aliases": [],
+    "price_index": 100
+  },
+  "hamburg": {
+    "name": "Hamburg",
+    "country": "Germany",
+    "continent": "Europe",
+    "lat": 53.5511,
+    "lon": 9.9937,
+    "iata": "HAM",
+    "aliases": [],
+    "price_index": 105
+  },
+  "munich": {
+    "name": "Munich",
+    "country": "Germany",
+    "continent": "Europe",
+    "lat": 48.1351,
+    "lon": 11.582,
+    "iata": "MUC",
+    "aliases": [
+      "muenchen",
+      "münchen"
+    ],
+    "price_index": 130
+  },
+  "lisbon": {
+    "name": "Lisbon",
+    "country": "Portugal",
+    "continent": "Europe",
+    "lat": 38.7223,
+    "lon": -9.1393,
+    "iata": "LIS",
+    "aliases": [
+      "lisboa"
+    ],
+    "price_index": 95
+  },
+  "barcelona": {
+    "name": "Barcelona",
+    "country": "Spain",
+    "continent": "Europe",
+    "lat": 41.3851,
+    "lon": 2.1734,
+    "iata": "BCN",
+    "aliases": [],
+    "price_index": 120
+  },
+  "madrid": {
+    "name": "Madrid",
+    "country": "Spain",
+    "continent": "Europe",
+    "lat": 40.4168,
+    "lon": -3.7038,
+    "iata": "MAD",
+    "aliases": [],
+    "price_index": 105
+  },
+  "paris": {
+    "name": "Paris",
+    "country": "France",
+    "continent": "Europe",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "iata": "PAR",
+    "aliases": [],
+    "price_index": 150
+  },
+  "amsterdam": {
+    "name": "Amsterdam",
+    "country": "Netherlands",
+    "continent": "Europe",
+    "lat": 52.3676,
+    "lon": 4.9041,
+    "iata": "AMS",
+    "aliases": [],
+    "price_index": 145
+  },
+  "copenhagen": {
+    "name": "Copenhagen",
+    "country": "Denmark",
+    "continent": "Europe",
+    "lat": 55.6761,
+    "lon": 12.5683,
+    "iata": "CPH",
+    "aliases": [
+      "kobenhavn",
+      "københavn"
+    ],
+    "price_index": 150
+  },
+  "vienna": {
+    "name": "Vienna",
+    "country": "Austria",
+    "continent": "Europe",
+    "lat": 48.2082,
+    "lon": 16.3738,
+    "iata": "VIE",
+    "aliases": [
+      "wien"
+    ],
+    "price_index": 115
+  },
+  "rome": {
+    "name": "Rome",
+    "country": "Italy",
+    "continent": "Europe",
+    "lat": 41.9028,
+    "lon": 12.4964,
+    "iata": "ROM",
+    "aliases": [
+      "roma"
+    ],
+    "price_index": 125
+  },
+  "prague": {
+    "name": "Prague",
+    "country": "Czechia",
+    "continent": "Europe",
+    "lat": 50.0755,
+    "lon": 14.4378,
+    "iata": "PRG",
+    "aliases": [
+      "praha"
+    ],
+    "price_index": 85
+  },
+  "zurich": {
+    "name": "Zurich",
+    "country": "Switzerland",
+    "continent": "Europe",
+    "lat": 47.3769,
+    "lon": 8.5417,
+    "iata": "ZRH",
+    "aliases": [
+      "zürich"
+    ],
+    "price_index": 190
+  },
+  "stockholm": {
+    "name": "Stockholm",
+    "country": "Sweden",
+    "continent": "Europe",
+    "lat": 59.3293,
+    "lon": 18.0686,
+    "iata": "STO",
+    "aliases": [],
+    "price_index": 125
+  },
+  "edinburgh": {
+    "name": "Edinburgh",
+    "country": "United Kingdom",
+    "continent": "Europe",
+    "lat": 55.9533,
+    "lon": -3.1883,
+    "iata": "EDI",
+    "aliases": [],
+    "price_index": 130
+  },
+  "london": {
+    "name": "London",
+    "country": "United Kingdom",
+    "continent": "Europe",
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "iata": "LON",
+    "aliases": [],
+    "price_index": 170
+  },
+  "reykjavik": {
+    "name": "Reykjavik",
+    "country": "Iceland",
+    "continent": "Europe",
+    "lat": 64.1466,
+    "lon": -21.9426,
+    "iata": "REK",
+    "aliases": [
+      "reykjavík",
+      "iceland"
+    ],
+    "price_index": 160
+  },
+  "san jose": {
+    "name": "San Jose",
+    "country": "Costa Rica",
+    "continent": "Central America",
+    "lat": 9.9281,
+    "lon": -84.0907,
+    "iata": "SJO",
+    "aliases": [
+      "costa rica",
+      "san josé"
+    ],
+    "price_index": 80
+  },
+  "kyoto": {
+    "name": "Kyoto",
+    "country": "Japan",
+    "continent": "Asia",
+    "lat": 35.0116,
+    "lon": 135.7681,
+    "iata": "OSA",
+    "aliases": [
+      "japan"
+    ],
+    "price_index": 130
+  }
+}

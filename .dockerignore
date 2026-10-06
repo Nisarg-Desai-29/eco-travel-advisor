@@ -1,0 +1,7 @@
+.venv*/
+venv/
+.git/
+.env
+results/
+handover_queue/
+__pycache__/

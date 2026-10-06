@@ -1,0 +1,2 @@
+# Action server only (used by Dockerfile.actions)
+requests>=2.31,<3

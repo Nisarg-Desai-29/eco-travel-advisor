@@ -1,0 +1,648 @@
+{
+  "berlin": [
+    {
+      "name": "Berlin Eco Hostel (demo)",
+      "eco_label": "Green Key (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 55,
+      "co2_kg_per_night": 6.0,
+      "rating": 4.1
+    },
+    {
+      "name": "Berlin Green Boutique Hotel (demo)",
+      "eco_label": "EU Ecolabel (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 100,
+      "co2_kg_per_night": 9.5,
+      "rating": 4.4
+    },
+    {
+      "name": "Berlin Solar Resort & Spa (demo)",
+      "eco_label": "Travelife Gold (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 160,
+      "co2_kg_per_night": 15.0,
+      "rating": 4.7
+    },
+    {
+      "name": "Berlin Central Business Hotel (demo)",
+      "eco_label": "No certification",
+      "eco_verified": false,
+      "price_per_night": 120,
+      "co2_kg_per_night": 28.0,
+      "rating": 4.0
+    }
+  ],
+  "hamburg": [
+    {
+      "name": "Hamburg Eco Hostel (demo)",
+      "eco_label": "Green Key (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 58,
+      "co2_kg_per_night": 6.0,
+      "rating": 4.1
+    },
+    {
+      "name": "Hamburg Green Boutique Hotel (demo)",
+      "eco_label": "EU Ecolabel (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 105,
+      "co2_kg_per_night": 9.5,
+      "rating": 4.4
+    },
+    {
+      "name": "Hamburg Solar Resort & Spa (demo)",
+      "eco_label": "Travelife Gold (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 168,
+      "co2_kg_per_night": 15.0,
+      "rating": 4.7
+    },
+    {
+      "name": "Hamburg Central Business Hotel (demo)",
+      "eco_label": "No certification",
+      "eco_verified": false,
+      "price_per_night": 126,
+      "co2_kg_per_night": 28.0,
+      "rating": 4.0
+    }
+  ],
+  "munich": [
+    {
+      "name": "Munich Eco Hostel (demo)",
+      "eco_label": "Green Key (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 72,
+      "co2_kg_per_night": 6.0,
+      "rating": 4.1
+    },
+    {
+      "name": "Munich Green Boutique Hotel (demo)",
+      "eco_label": "EU Ecolabel (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 130,
+      "co2_kg_per_night": 9.5,
+      "rating": 4.4
+    },
+    {
+      "name": "Munich Solar Resort & Spa (demo)",
+      "eco_label": "Travelife Gold (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 208,
+      "co2_kg_per_night": 15.0,
+      "rating": 4.7
+    },
+    {
+      "name": "Munich Central Business Hotel (demo)",
+      "eco_label": "No certification",
+      "eco_verified": false,
+      "price_per_night": 156,
+      "co2_kg_per_night": 28.0,
+      "rating": 4.0
+    }
+  ],
+  "lisbon": [
+    {
+      "name": "Lisbon Eco Hostel (demo)",
+      "eco_label": "Green Key (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 52,
+      "co2_kg_per_night": 6.0,
+      "rating": 4.1
+    },
+    {
+      "name": "Lisbon Green Boutique Hotel (demo)",
+      "eco_label": "EU Ecolabel (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 95,
+      "co2_kg_per_night": 9.5,
+      "rating": 4.4
+    },
+    {
+      "name": "Lisbon Solar Resort & Spa (demo)",
+      "eco_label": "Travelife Gold (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 152,
+      "co2_kg_per_night": 15.0,
+      "rating": 4.7
+    },
+    {
+      "name": "Lisbon Central Business Hotel (demo)",
+      "eco_label": "No certification",
+      "eco_verified": false,
+      "price_per_night": 114,
+      "co2_kg_per_night": 28.0,
+      "rating": 4.0
+    }
+  ],
+  "barcelona": [
+    {
+      "name": "Barcelona Eco Hostel (demo)",
+      "eco_label": "Green Key (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 66,
+      "co2_kg_per_night": 6.0,
+      "rating": 4.1
+    },
+    {
+      "name": "Barcelona Green Boutique Hotel (demo)",
+      "eco_label": "EU Ecolabel (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 120,
+      "co2_kg_per_night": 9.5,
+      "rating": 4.4
+    },
+    {
+      "name": "Barcelona Solar Resort & Spa (demo)",
+      "eco_label": "Travelife Gold (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 192,
+      "co2_kg_per_night": 15.0,
+      "rating": 4.7
+    },
+    {
+      "name": "Barcelona Central Business Hotel (demo)",
+      "eco_label": "No certification",
+      "eco_verified": false,
+      "price_per_night": 144,
+      "co2_kg_per_night": 28.0,
+      "rating": 4.0
+    }
+  ],
+  "madrid": [
+    {
+      "name": "Madrid Eco Hostel (demo)",
+      "eco_label": "Green Key (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 58,
+      "co2_kg_per_night": 6.0,
+      "rating": 4.1
+    },
+    {
+      "name": "Madrid Green Boutique Hotel (demo)",
+      "eco_label": "EU Ecolabel (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 105,
+      "co2_kg_per_night": 9.5,
+      "rating": 4.4
+    },
+    {
+      "name": "Madrid Solar Resort & Spa (demo)",
+      "eco_label": "Travelife Gold (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 168,
+      "co2_kg_per_night": 15.0,
+      "rating": 4.7
+    },
+    {
+      "name": "Madrid Central Business Hotel (demo)",
+      "eco_label": "No certification",
+      "eco_verified": false,
+      "price_per_night": 126,
+      "co2_kg_per_night": 28.0,
+      "rating": 4.0
+    }
+  ],
+  "paris": [
+    {
+      "name": "Paris Eco Hostel (demo)",
+      "eco_label": "Green Key (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 82,
+      "co2_kg_per_night": 6.0,
+      "rating": 4.1
+    },
+    {
+      "name": "Paris Green Boutique Hotel (demo)",
+      "eco_label": "EU Ecolabel (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 150,
+      "co2_kg_per_night": 9.5,
+      "rating": 4.4
+    },
+    {
+      "name": "Paris Solar Resort & Spa (demo)",
+      "eco_label": "Travelife Gold (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 240,
+      "co2_kg_per_night": 15.0,
+      "rating": 4.7
+    },
+    {
+      "name": "Paris Central Business Hotel (demo)",
+      "eco_label": "No certification",
+      "eco_verified": false,
+      "price_per_night": 180,
+      "co2_kg_per_night": 28.0,
+      "rating": 4.0
+    }
+  ],
+  "amsterdam": [
+    {
+      "name": "Amsterdam Eco Hostel (demo)",
+      "eco_label": "Green Key (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 80,
+      "co2_kg_per_night": 6.0,
+      "rating": 4.1
+    },
+    {
+      "name": "Amsterdam Green Boutique Hotel (demo)",
+      "eco_label": "EU Ecolabel (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 145,
+      "co2_kg_per_night": 9.5,
+      "rating": 4.4
+    },
+    {
+      "name": "Amsterdam Solar Resort & Spa (demo)",
+      "eco_label": "Travelife Gold (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 232,
+      "co2_kg_per_night": 15.0,
+      "rating": 4.7
+    },
+    {
+      "name": "Amsterdam Central Business Hotel (demo)",
+      "eco_label": "No certification",
+      "eco_verified": false,
+      "price_per_night": 174,
+      "co2_kg_per_night": 28.0,
+      "rating": 4.0
+    }
+  ],
+  "copenhagen": [
+    {
+      "name": "Copenhagen Eco Hostel (demo)",
+      "eco_label": "Green Key (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 82,
+      "co2_kg_per_night": 6.0,
+      "rating": 4.1
+    },
+    {
+      "name": "Copenhagen Green Boutique Hotel (demo)",
+      "eco_label": "EU Ecolabel (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 150,
+      "co2_kg_per_night": 9.5,
+      "rating": 4.4
+    },
+    {
+      "name": "Copenhagen Solar Resort & Spa (demo)",
+      "eco_label": "Travelife Gold (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 240,
+      "co2_kg_per_night": 15.0,
+      "rating": 4.7
+    },
+    {
+      "name": "Copenhagen Central Business Hotel (demo)",
+      "eco_label": "No certification",
+      "eco_verified": false,
+      "price_per_night": 180,
+      "co2_kg_per_night": 28.0,
+      "rating": 4.0
+    }
+  ],
+  "vienna": [
+    {
+      "name": "Vienna Eco Hostel (demo)",
+      "eco_label": "Green Key (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 63,
+      "co2_kg_per_night": 6.0,
+      "rating": 4.1
+    },
+    {
+      "name": "Vienna Green Boutique Hotel (demo)",
+      "eco_label": "EU Ecolabel (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 115,
+      "co2_kg_per_night": 9.5,
+      "rating": 4.4
+    },
+    {
+      "name": "Vienna Solar Resort & Spa (demo)",
+      "eco_label": "Travelife Gold (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 184,
+      "co2_kg_per_night": 15.0,
+      "rating": 4.7
+    },
+    {
+      "name": "Vienna Central Business Hotel (demo)",
+      "eco_label": "No certification",
+      "eco_verified": false,
+      "price_per_night": 138,
+      "co2_kg_per_night": 28.0,
+      "rating": 4.0
+    }
+  ],
+  "rome": [
+    {
+      "name": "Rome Eco Hostel (demo)",
+      "eco_label": "Green Key (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 69,
+      "co2_kg_per_night": 6.0,
+      "rating": 4.1
+    },
+    {
+      "name": "Rome Green Boutique Hotel (demo)",
+      "eco_label": "EU Ecolabel (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 125,
+      "co2_kg_per_night": 9.5,
+      "rating": 4.4
+    },
+    {
+      "name": "Rome Solar Resort & Spa (demo)",
+      "eco_label": "Travelife Gold (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 200,
+      "co2_kg_per_night": 15.0,
+      "rating": 4.7
+    },
+    {
+      "name": "Rome Central Business Hotel (demo)",
+      "eco_label": "No certification",
+      "eco_verified": false,
+      "price_per_night": 150,
+      "co2_kg_per_night": 28.0,
+      "rating": 4.0
+    }
+  ],
+  "prague": [
+    {
+      "name": "Prague Eco Hostel (demo)",
+      "eco_label": "Green Key (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 47,
+      "co2_kg_per_night": 6.0,
+      "rating": 4.1
+    },
+    {
+      "name": "Prague Green Boutique Hotel (demo)",
+      "eco_label": "EU Ecolabel (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 85,
+      "co2_kg_per_night": 9.5,
+      "rating": 4.4
+    },
+    {
+      "name": "Prague Solar Resort & Spa (demo)",
+      "eco_label": "Travelife Gold (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 136,
+      "co2_kg_per_night": 15.0,
+      "rating": 4.7
+    },
+    {
+      "name": "Prague Central Business Hotel (demo)",
+      "eco_label": "No certification",
+      "eco_verified": false,
+      "price_per_night": 102,
+      "co2_kg_per_night": 28.0,
+      "rating": 4.0
+    }
+  ],
+  "zurich": [
+    {
+      "name": "Zurich Eco Hostel (demo)",
+      "eco_label": "Green Key (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 105,
+      "co2_kg_per_night": 6.0,
+      "rating": 4.1
+    },
+    {
+      "name": "Zurich Green Boutique Hotel (demo)",
+      "eco_label": "EU Ecolabel (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 190,
+      "co2_kg_per_night": 9.5,
+      "rating": 4.4
+    },
+    {
+      "name": "Zurich Solar Resort & Spa (demo)",
+      "eco_label": "Travelife Gold (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 304,
+      "co2_kg_per_night": 15.0,
+      "rating": 4.7
+    },
+    {
+      "name": "Zurich Central Business Hotel (demo)",
+      "eco_label": "No certification",
+      "eco_verified": false,
+      "price_per_night": 228,
+      "co2_kg_per_night": 28.0,
+      "rating": 4.0
+    }
+  ],
+  "stockholm": [
+    {
+      "name": "Stockholm Eco Hostel (demo)",
+      "eco_label": "Green Key (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 69,
+      "co2_kg_per_night": 6.0,
+      "rating": 4.1
+    },
+    {
+      "name": "Stockholm Green Boutique Hotel (demo)",
+      "eco_label": "EU Ecolabel (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 125,
+      "co2_kg_per_night": 9.5,
+      "rating": 4.4
+    },
+    {
+      "name": "Stockholm Solar Resort & Spa (demo)",
+      "eco_label": "Travelife Gold (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 200,
+      "co2_kg_per_night": 15.0,
+      "rating": 4.7
+    },
+    {
+      "name": "Stockholm Central Business Hotel (demo)",
+      "eco_label": "No certification",
+      "eco_verified": false,
+      "price_per_night": 150,
+      "co2_kg_per_night": 28.0,
+      "rating": 4.0
+    }
+  ],
+  "edinburgh": [
+    {
+      "name": "Edinburgh Eco Hostel (demo)",
+      "eco_label": "Green Key (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 72,
+      "co2_kg_per_night": 6.0,
+      "rating": 4.1
+    },
+    {
+      "name": "Edinburgh Green Boutique Hotel (demo)",
+      "eco_label": "EU Ecolabel (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 130,
+      "co2_kg_per_night": 9.5,
+      "rating": 4.4
+    },
+    {
+      "name": "Edinburgh Solar Resort & Spa (demo)",
+      "eco_label": "Travelife Gold (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 208,
+      "co2_kg_per_night": 15.0,
+      "rating": 4.7
+    },
+    {
+      "name": "Edinburgh Central Business Hotel (demo)",
+      "eco_label": "No certification",
+      "eco_verified": false,
+      "price_per_night": 156,
+      "co2_kg_per_night": 28.0,
+      "rating": 4.0
+    }
+  ],
+  "london": [
+    {
+      "name": "London Eco Hostel (demo)",
+      "eco_label": "Green Key (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 94,
+      "co2_kg_per_night": 6.0,
+      "rating": 4.1
+    },
+    {
+      "name": "London Green Boutique Hotel (demo)",
+      "eco_label": "EU Ecolabel (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 170,
+      "co2_kg_per_night": 9.5,
+      "rating": 4.4
+    },
+    {
+      "name": "London Solar Resort & Spa (demo)",
+      "eco_label": "Travelife Gold (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 272,
+      "co2_kg_per_night": 15.0,
+      "rating": 4.7
+    },
+    {
+      "name": "London Central Business Hotel (demo)",
+      "eco_label": "No certification",
+      "eco_verified": false,
+      "price_per_night": 204,
+      "co2_kg_per_night": 28.0,
+      "rating": 4.0
+    }
+  ],
+  "reykjavik": [
+    {
+      "name": "Reykjavik Eco Hostel (demo)",
+      "eco_label": "Green Key (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 88,
+      "co2_kg_per_night": 6.0,
+      "rating": 4.1
+    },
+    {
+      "name": "Reykjavik Green Boutique Hotel (demo)",
+      "eco_label": "EU Ecolabel (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 160,
+      "co2_kg_per_night": 9.5,
+      "rating": 4.4
+    },
+    {
+      "name": "Reykjavik Solar Resort & Spa (demo)",
+      "eco_label": "Travelife Gold (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 256,
+      "co2_kg_per_night": 15.0,
+      "rating": 4.7
+    },
+    {
+      "name": "Reykjavik Central Business Hotel (demo)",
+      "eco_label": "No certification",
+      "eco_verified": false,
+      "price_per_night": 192,
+      "co2_kg_per_night": 28.0,
+      "rating": 4.0
+    }
+  ],
+  "san jose": [
+    {
+      "name": "San Jose Eco Hostel (demo)",
+      "eco_label": "Green Key (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 44,
+      "co2_kg_per_night": 6.0,
+      "rating": 4.1
+    },
+    {
+      "name": "San Jose Green Boutique Hotel (demo)",
+      "eco_label": "EU Ecolabel (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 80,
+      "co2_kg_per_night": 9.5,
+      "rating": 4.4
+    },
+    {
+      "name": "San Jose Solar Resort & Spa (demo)",
+      "eco_label": "Travelife Gold (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 128,
+      "co2_kg_per_night": 15.0,
+      "rating": 4.7
+    },
+    {
+      "name": "San Jose Central Business Hotel (demo)",
+      "eco_label": "No certification",
+      "eco_verified": false,
+      "price_per_night": 96,
+      "co2_kg_per_night": 28.0,
+      "rating": 4.0
+    }
+  ],
+  "kyoto": [
+    {
+      "name": "Kyoto Eco Hostel (demo)",
+      "eco_label": "Green Key (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 72,
+      "co2_kg_per_night": 6.0,
+      "rating": 4.1
+    },
+    {
+      "name": "Kyoto Green Boutique Hotel (demo)",
+      "eco_label": "EU Ecolabel (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 130,
+      "co2_kg_per_night": 9.5,
+      "rating": 4.4
+    },
+    {
+      "name": "Kyoto Solar Resort & Spa (demo)",
+      "eco_label": "Travelife Gold (illustrative)",
+      "eco_verified": true,
+      "price_per_night": 208,
+      "co2_kg_per_night": 15.0,
+      "rating": 4.7
+    },
+    {
+      "name": "Kyoto Central Business Hotel (demo)",
+      "eco_label": "No certification",
+      "eco_verified": false,
+      "price_per_night": 156,
+      "co2_kg_per_night": 28.0,
+      "rating": 4.0
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+.env
+.venv*/
+venv/
+__pycache__/
+*.pyc
+models/
+.rasa/
+results/
+handover_queue/
+.pytest_cache/
+trackers.db
+.DS_Store

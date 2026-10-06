@@ -1,0 +1,20 @@
+{
+  "_note": "Illustrative demo programmes. Always check the project in an independent registry (e.g. Gold Standard, Verra) before paying. Reduce first, offset last.",
+  "programmes": [
+    {
+      "name": "Demo Reforestation Fund (illustrative)",
+      "type": "Tree planting",
+      "price_per_tonne": 18
+    },
+    {
+      "name": "Demo Cookstove Project (illustrative)",
+      "type": "Clean cooking",
+      "price_per_tonne": 30
+    },
+    {
+      "name": "Demo Direct Air Capture (illustrative)",
+      "type": "Carbon removal",
+      "price_per_tonne": 250
+    }
+  ]
+}

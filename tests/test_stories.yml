@@ -1,0 +1,122 @@
+version: "3.1"
+
+# Run with the action server up:  rasa run actions   (second terminal)
+# then:  rasa test core --stories tests/test_stories.yml
+stories:
+- story: test greet
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: test full trip happy path
+  steps:
+    - intent: plan_trip
+    - action: trip_form
+    - active_loop: trip_form
+    - slot_was_set:
+        - requested_slot: destination
+    - intent: inform_destination
+      entities:
+        - destination: Lisbon
+    - slot_was_set:
+        - destination: Lisbon
+    - slot_was_set:
+        - requested_slot: origin
+    - intent: inform_origin
+      entities:
+        - origin: Berlin
+    - slot_was_set:
+        - origin: Berlin
+    - slot_was_set:
+        - requested_slot: travel_date
+    - intent: inform_dates
+      entities:
+        - travel_date: "2030-05-10"
+    - slot_was_set:
+        - travel_date: "2030-05-10"
+    - slot_was_set:
+        - requested_slot: budget
+    - intent: inform_budget
+      entities:
+        - budget: "900"
+    - slot_was_set:
+        - budget: 900.0
+    - slot_was_set:
+        - requested_slot: sustainability_level
+    - intent: inform_sustainability_level
+      entities:
+        - sustainability_level: high
+    - slot_was_set:
+        - sustainability_level: high
+    - slot_was_set:
+        - requested_slot: null
+    - active_loop: null
+    - action: action_fetch_carbon_footprint
+    - action: action_fetch_eco_hotels
+    - action: action_rank_options
+    - action: utter_anything_else
+
+- story: test human advisor request
+  steps:
+    - intent: request_human_advisor
+    - action: action_human_handover
+
+- story: test two-stage fallback then handover
+  steps:
+    - intent: nlu_fallback
+    - action: action_default_fallback
+    - slot_was_set:
+        - clarification_attempts: 1.0
+    - intent: nlu_fallback
+    - action: action_default_fallback
+
+- story: test explain CO2e outside a form
+  steps:
+    - intent: explain_co2e
+    - action: utter_explain_co2e
+
+- story: test privacy question
+  steps:
+    - intent: ask_privacy
+    - action: utter_privacy
+
+- story: test out of scope
+  steps:
+    - intent: out_of_scope
+    - action: utter_out_of_scope
+
+- story: test offsets request
+  steps:
+    - intent: ask_offsets
+    - action: action_show_offsets
+
+- story: test local experiences
+  steps:
+    - intent: ask_experiences
+    - action: action_fetch_experiences
+
+- story: test stop in the middle of the form
+  steps:
+    - intent: plan_trip
+    - action: trip_form
+    - active_loop: trip_form
+    - slot_was_set:
+        - requested_slot: destination
+    - intent: stop
+    - action: action_deactivate_loop
+    - active_loop: null
+    - slot_was_set:
+        - requested_slot: null
+    - action: utter_stopped
+
+- story: test explain CO2e inside the form then continue
+  steps:
+    - intent: plan_trip
+    - action: trip_form
+    - active_loop: trip_form
+    - slot_was_set:
+        - requested_slot: destination
+    - intent: explain_co2e
+    - action: utter_explain_co2e
+    - action: trip_form
+    - active_loop: trip_form

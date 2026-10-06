@@ -1,0 +1,10 @@
+# Custom action server (Climatiq / Amadeus / ranking / handover)
+FROM python:3.10-slim
+ENV PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1
+WORKDIR /app
+COPY requirements-actions.txt .
+RUN pip install rasa-sdk==3.6.2 -r requirements-actions.txt
+COPY actions ./actions
+COPY mock_data ./mock_data
+EXPOSE 5055
+CMD ["python", "-m", "rasa_sdk", "--actions", "actions", "--port", "5055"]

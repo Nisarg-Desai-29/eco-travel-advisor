@@ -1,0 +1,3 @@
+# Used inside Docker (Compose and Hugging Face). ACTION_URL is set by the container environment.
+action_endpoint:
+  url: "${ACTION_URL}"

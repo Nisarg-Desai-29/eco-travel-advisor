@@ -1,0 +1,223 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thanks
+  - bot_challenge
+  - plan_trip
+  - inform_destination
+  - inform_origin
+  - inform_dates
+  - inform_budget
+  - inform_sustainability_level
+  - ask_carbon_footprint
+  - ask_eco_hotels
+  - ask_offsets
+  - ask_experiences
+  - explain_co2e
+  - ask_privacy
+  - delete_my_data
+  - request_human_advisor
+  - stop
+  - out_of_scope
+  - nlu_fallback
+
+entities:
+  - destination
+  - origin
+  - travel_date
+  - budget
+  - sustainability_level
+
+slots:
+  destination:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: destination
+        conditions:
+          - active_loop: null
+      - type: from_entity
+        entity: destination
+        conditions:
+          - active_loop: trip_form
+            requested_slot: destination
+      - type: from_text
+        conditions:
+          - active_loop: trip_form
+            requested_slot: destination
+  origin:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: origin
+        conditions:
+          - active_loop: null
+      - type: from_entity
+        entity: origin
+        conditions:
+          - active_loop: trip_form
+            requested_slot: origin
+      - type: from_text
+        conditions:
+          - active_loop: trip_form
+            requested_slot: origin
+  travel_date:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: travel_date
+        conditions:
+          - active_loop: null
+      - type: from_entity
+        entity: travel_date
+        conditions:
+          - active_loop: trip_form
+            requested_slot: travel_date
+      - type: from_text
+        conditions:
+          - active_loop: trip_form
+            requested_slot: travel_date
+  budget:
+    type: any
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: budget
+        conditions:
+          - active_loop: null
+      - type: from_entity
+        entity: budget
+        conditions:
+          - active_loop: trip_form
+            requested_slot: budget
+      - type: from_text
+        conditions:
+          - active_loop: trip_form
+            requested_slot: budget
+  sustainability_level:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: sustainability_level
+      - type: from_text
+        conditions:
+          - active_loop: trip_form
+            requested_slot: sustainability_level
+  trip_start:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+  trip_nights:
+    type: any
+    influence_conversation: false
+    mappings:
+      - type: custom
+  trip_co2_kg:
+    type: float
+    influence_conversation: false
+    mappings:
+      - type: custom
+  clarification_attempts:
+    type: float
+    initial_value: 0.0
+    influence_conversation: false
+    mappings:
+      - type: custom
+  handover_status:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+forms:
+  trip_form:
+    required_slots:
+      - destination
+      - origin
+      - travel_date
+      - budget
+      - sustainability_level
+
+responses:
+  utter_greet:
+    - text: "Hi, I'm EcoTravel Advisor. I help you plan lower-carbon trips and compare the footprint of different ways to travel. What would you like to do?"
+      buttons:
+        - title: "Plan a trip"
+          payload: "/plan_trip"
+        - title: "Compare transport emissions"
+          payload: "/ask_carbon_footprint"
+        - title: "Talk to a human advisor"
+          payload: "/request_human_advisor"
+
+  utter_ask_travel_date:
+    - text: "When do you want to start? For example 2027-03-15, 15 March, or next weekend. You can add a range such as 10 to 15 December."
+
+  utter_ask_budget:
+    - text: "What is your total budget for the trip in euros (travel plus stay)?"
+
+  utter_anything_else:
+    - text: "Would you like to do anything else with this trip?"
+      buttons:
+        - title: "Offset my emissions"
+          payload: "/ask_offsets"
+        - title: "Local experiences"
+          payload: "/ask_experiences"
+        - title: "Plan another trip"
+          payload: "/plan_trip"
+        - title: "Talk to a human advisor"
+          payload: "/request_human_advisor"
+
+  utter_explain_co2e:
+    - text: "CO2e (carbon dioxide equivalent) expresses all greenhouse gases as the amount of CO2 with the same warming effect. Colours: green is under 50 kg per person one way, amber is 50 to 150 kg, red is above 150 kg. Numbers are estimates, not exact measurements."
+
+  utter_privacy:
+    - text: "I only use what you tell me in this chat to plan the trip. Nothing is stored after the session ends, except when you ask for a human advisor: then your trip details and this chat are passed to them. Say 'delete my data' at any time to clear this conversation."
+
+  utter_data_deleted:
+    - text: "Done. I have cleared this conversation and your trip details."
+
+  utter_thanks:
+    - text: "You're welcome!"
+
+  utter_goodbye:
+    - text: "Safe and sustainable travels!"
+
+  utter_iamabot:
+    - text: "I'm an automated assistant. You can ask for a human travel advisor at any time."
+
+  utter_stopped:
+    - text: "No problem, I've stopped the trip planning. Tell me when you want to start again."
+      buttons:
+        - title: "Plan a trip"
+          payload: "/plan_trip"
+
+  utter_out_of_scope:
+    - text: "I can only help with sustainable trip planning, such as transport emissions, eco-friendly stays and offsets."
+      buttons:
+        - title: "Plan a trip"
+          payload: "/plan_trip"
+        - title: "Talk to a human advisor"
+          payload: "/request_human_advisor"
+
+actions:
+  - action_ask_destination
+  - action_ask_origin
+  - action_ask_sustainability_level
+  - action_fetch_carbon_footprint
+  - action_fetch_eco_hotels
+  - action_rank_options
+  - action_show_offsets
+  - action_fetch_experiences
+  - action_human_handover
+  - action_default_fallback
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: false

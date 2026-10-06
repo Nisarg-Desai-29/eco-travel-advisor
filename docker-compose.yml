@@ -1,0 +1,40 @@
+# Usage:  copy .env.example to .env, then:  docker compose up --build
+# Rasa  -> http://localhost:5005   Streamlit UI -> http://localhost:8501
+services:
+  rasa:
+    build: .
+    ports:
+      - "5005:5005"
+    environment:
+      ACTION_URL: http://action-server:5055/webhook
+    depends_on:
+      - action-server
+    networks: [eco-net]
+
+  action-server:        # not published to the host: only reachable on the internal network
+    build:
+      context: .
+      dockerfile: Dockerfile.actions
+    env_file:
+      - .env
+    environment:
+      HANDOVER_DIR: /app/handover_queue
+    volumes:
+      - ./handover_queue:/app/handover_queue
+    networks: [eco-net]
+
+  ui:
+    build:
+      context: .
+      dockerfile: Dockerfile.ui
+    ports:
+      - "8501:8501"
+    environment:
+      RASA_URL: http://rasa:5005
+    depends_on:
+      - rasa
+    networks: [eco-net]
+
+networks:
+  eco-net:
+    driver: bridge

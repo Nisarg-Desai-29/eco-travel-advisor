@@ -1,0 +1,382 @@
+{
+  "berlin": [
+    {
+      "name": "Community-run walking tour of Berlin (demo)",
+      "price": 18,
+      "co2_kg": 0.5,
+      "community_benefit": "Guides are local residents; fees stay in the neighbourhood."
+    },
+    {
+      "name": "Local producers market and cooking class, Berlin (demo)",
+      "price": 45,
+      "co2_kg": 3.0,
+      "community_benefit": "Buys directly from small regional producers."
+    },
+    {
+      "name": "Volunteer nature clean-up day near Berlin (demo)",
+      "price": 0,
+      "co2_kg": 1.0,
+      "community_benefit": "Supports a local conservation group."
+    }
+  ],
+  "hamburg": [
+    {
+      "name": "Community-run walking tour of Hamburg (demo)",
+      "price": 18,
+      "co2_kg": 0.5,
+      "community_benefit": "Guides are local residents; fees stay in the neighbourhood."
+    },
+    {
+      "name": "Local producers market and cooking class, Hamburg (demo)",
+      "price": 45,
+      "co2_kg": 3.0,
+      "community_benefit": "Buys directly from small regional producers."
+    },
+    {
+      "name": "Volunteer nature clean-up day near Hamburg (demo)",
+      "price": 0,
+      "co2_kg": 1.0,
+      "community_benefit": "Supports a local conservation group."
+    }
+  ],
+  "munich": [
+    {
+      "name": "Community-run walking tour of Munich (demo)",
+      "price": 18,
+      "co2_kg": 0.5,
+      "community_benefit": "Guides are local residents; fees stay in the neighbourhood."
+    },
+    {
+      "name": "Local producers market and cooking class, Munich (demo)",
+      "price": 45,
+      "co2_kg": 3.0,
+      "community_benefit": "Buys directly from small regional producers."
+    },
+    {
+      "name": "Volunteer nature clean-up day near Munich (demo)",
+      "price": 0,
+      "co2_kg": 1.0,
+      "community_benefit": "Supports a local conservation group."
+    }
+  ],
+  "lisbon": [
+    {
+      "name": "Community-run walking tour of Lisbon (demo)",
+      "price": 18,
+      "co2_kg": 0.5,
+      "community_benefit": "Guides are local residents; fees stay in the neighbourhood."
+    },
+    {
+      "name": "Local producers market and cooking class, Lisbon (demo)",
+      "price": 45,
+      "co2_kg": 3.0,
+      "community_benefit": "Buys directly from small regional producers."
+    },
+    {
+      "name": "Volunteer nature clean-up day near Lisbon (demo)",
+      "price": 0,
+      "co2_kg": 1.0,
+      "community_benefit": "Supports a local conservation group."
+    }
+  ],
+  "barcelona": [
+    {
+      "name": "Community-run walking tour of Barcelona (demo)",
+      "price": 18,
+      "co2_kg": 0.5,
+      "community_benefit": "Guides are local residents; fees stay in the neighbourhood."
+    },
+    {
+      "name": "Local producers market and cooking class, Barcelona (demo)",
+      "price": 45,
+      "co2_kg": 3.0,
+      "community_benefit": "Buys directly from small regional producers."
+    },
+    {
+      "name": "Volunteer nature clean-up day near Barcelona (demo)",
+      "price": 0,
+      "co2_kg": 1.0,
+      "community_benefit": "Supports a local conservation group."
+    }
+  ],
+  "madrid": [
+    {
+      "name": "Community-run walking tour of Madrid (demo)",
+      "price": 18,
+      "co2_kg": 0.5,
+      "community_benefit": "Guides are local residents; fees stay in the neighbourhood."
+    },
+    {
+      "name": "Local producers market and cooking class, Madrid (demo)",
+      "price": 45,
+      "co2_kg": 3.0,
+      "community_benefit": "Buys directly from small regional producers."
+    },
+    {
+      "name": "Volunteer nature clean-up day near Madrid (demo)",
+      "price": 0,
+      "co2_kg": 1.0,
+      "community_benefit": "Supports a local conservation group."
+    }
+  ],
+  "paris": [
+    {
+      "name": "Community-run walking tour of Paris (demo)",
+      "price": 18,
+      "co2_kg": 0.5,
+      "community_benefit": "Guides are local residents; fees stay in the neighbourhood."
+    },
+    {
+      "name": "Local producers market and cooking class, Paris (demo)",
+      "price": 45,
+      "co2_kg": 3.0,
+      "community_benefit": "Buys directly from small regional producers."
+    },
+    {
+      "name": "Volunteer nature clean-up day near Paris (demo)",
+      "price": 0,
+      "co2_kg": 1.0,
+      "community_benefit": "Supports a local conservation group."
+    }
+  ],
+  "amsterdam": [
+    {
+      "name": "Community-run walking tour of Amsterdam (demo)",
+      "price": 18,
+      "co2_kg": 0.5,
+      "community_benefit": "Guides are local residents; fees stay in the neighbourhood."
+    },
+    {
+      "name": "Local producers market and cooking class, Amsterdam (demo)",
+      "price": 45,
+      "co2_kg": 3.0,
+      "community_benefit": "Buys directly from small regional producers."
+    },
+    {
+      "name": "Volunteer nature clean-up day near Amsterdam (demo)",
+      "price": 0,
+      "co2_kg": 1.0,
+      "community_benefit": "Supports a local conservation group."
+    }
+  ],
+  "copenhagen": [
+    {
+      "name": "Community-run walking tour of Copenhagen (demo)",
+      "price": 18,
+      "co2_kg": 0.5,
+      "community_benefit": "Guides are local residents; fees stay in the neighbourhood."
+    },
+    {
+      "name": "Local producers market and cooking class, Copenhagen (demo)",
+      "price": 45,
+      "co2_kg": 3.0,
+      "community_benefit": "Buys directly from small regional producers."
+    },
+    {
+      "name": "Volunteer nature clean-up day near Copenhagen (demo)",
+      "price": 0,
+      "co2_kg": 1.0,
+      "community_benefit": "Supports a local conservation group."
+    }
+  ],
+  "vienna": [
+    {
+      "name": "Community-run walking tour of Vienna (demo)",
+      "price": 18,
+      "co2_kg": 0.5,
+      "community_benefit": "Guides are local residents; fees stay in the neighbourhood."
+    },
+    {
+      "name": "Local producers market and cooking class, Vienna (demo)",
+      "price": 45,
+      "co2_kg": 3.0,
+      "community_benefit": "Buys directly from small regional producers."
+    },
+    {
+      "name": "Volunteer nature clean-up day near Vienna (demo)",
+      "price": 0,
+      "co2_kg": 1.0,
+      "community_benefit": "Supports a local conservation group."
+    }
+  ],
+  "rome": [
+    {
+      "name": "Community-run walking tour of Rome (demo)",
+      "price": 18,
+      "co2_kg": 0.5,
+      "community_benefit": "Guides are local residents; fees stay in the neighbourhood."
+    },
+    {
+      "name": "Local producers market and cooking class, Rome (demo)",
+      "price": 45,
+      "co2_kg": 3.0,
+      "community_benefit": "Buys directly from small regional producers."
+    },
+    {
+      "name": "Volunteer nature clean-up day near Rome (demo)",
+      "price": 0,
+      "co2_kg": 1.0,
+      "community_benefit": "Supports a local conservation group."
+    }
+  ],
+  "prague": [
+    {
+      "name": "Community-run walking tour of Prague (demo)",
+      "price": 18,
+      "co2_kg": 0.5,
+      "community_benefit": "Guides are local residents; fees stay in the neighbourhood."
+    },
+    {
+      "name": "Local producers market and cooking class, Prague (demo)",
+      "price": 45,
+      "co2_kg": 3.0,
+      "community_benefit": "Buys directly from small regional producers."
+    },
+    {
+      "name": "Volunteer nature clean-up day near Prague (demo)",
+      "price": 0,
+      "co2_kg": 1.0,
+      "community_benefit": "Supports a local conservation group."
+    }
+  ],
+  "zurich": [
+    {
+      "name": "Community-run walking tour of Zurich (demo)",
+      "price": 18,
+      "co2_kg": 0.5,
+      "community_benefit": "Guides are local residents; fees stay in the neighbourhood."
+    },
+    {
+      "name": "Local producers market and cooking class, Zurich (demo)",
+      "price": 45,
+      "co2_kg": 3.0,
+      "community_benefit": "Buys directly from small regional producers."
+    },
+    {
+      "name": "Volunteer nature clean-up day near Zurich (demo)",
+      "price": 0,
+      "co2_kg": 1.0,
+      "community_benefit": "Supports a local conservation group."
+    }
+  ],
+  "stockholm": [
+    {
+      "name": "Community-run walking tour of Stockholm (demo)",
+      "price": 18,
+      "co2_kg": 0.5,
+      "community_benefit": "Guides are local residents; fees stay in the neighbourhood."
+    },
+    {
+      "name": "Local producers market and cooking class, Stockholm (demo)",
+      "price": 45,
+      "co2_kg": 3.0,
+      "community_benefit": "Buys directly from small regional producers."
+    },
+    {
+      "name": "Volunteer nature clean-up day near Stockholm (demo)",
+      "price": 0,
+      "co2_kg": 1.0,
+      "community_benefit": "Supports a local conservation group."
+    }
+  ],
+  "edinburgh": [
+    {
+      "name": "Community-run walking tour of Edinburgh (demo)",
+      "price": 18,
+      "co2_kg": 0.5,
+      "community_benefit": "Guides are local residents; fees stay in the neighbourhood."
+    },
+    {
+      "name": "Local producers market and cooking class, Edinburgh (demo)",
+      "price": 45,
+      "co2_kg": 3.0,
+      "community_benefit": "Buys directly from small regional producers."
+    },
+    {
+      "name": "Volunteer nature clean-up day near Edinburgh (demo)",
+      "price": 0,
+      "co2_kg": 1.0,
+      "community_benefit": "Supports a local conservation group."
+    }
+  ],
+  "london": [
+    {
+      "name": "Community-run walking tour of London (demo)",
+      "price": 18,
+      "co2_kg": 0.5,
+      "community_benefit": "Guides are local residents; fees stay in the neighbourhood."
+    },
+    {
+      "name": "Local producers market and cooking class, London (demo)",
+      "price": 45,
+      "co2_kg": 3.0,
+      "community_benefit": "Buys directly from small regional producers."
+    },
+    {
+      "name": "Volunteer nature clean-up day near London (demo)",
+      "price": 0,
+      "co2_kg": 1.0,
+      "community_benefit": "Supports a local conservation group."
+    }
+  ],
+  "reykjavik": [
+    {
+      "name": "Community-run walking tour of Reykjavik (demo)",
+      "price": 18,
+      "co2_kg": 0.5,
+      "community_benefit": "Guides are local residents; fees stay in the neighbourhood."
+    },
+    {
+      "name": "Local producers market and cooking class, Reykjavik (demo)",
+      "price": 45,
+      "co2_kg": 3.0,
+      "community_benefit": "Buys directly from small regional producers."
+    },
+    {
+      "name": "Volunteer nature clean-up day near Reykjavik (demo)",
+      "price": 0,
+      "co2_kg": 1.0,
+      "community_benefit": "Supports a local conservation group."
+    }
+  ],
+  "san jose": [
+    {
+      "name": "Community-run walking tour of San Jose (demo)",
+      "price": 18,
+      "co2_kg": 0.5,
+      "community_benefit": "Guides are local residents; fees stay in the neighbourhood."
+    },
+    {
+      "name": "Local producers market and cooking class, San Jose (demo)",
+      "price": 45,
+      "co2_kg": 3.0,
+      "community_benefit": "Buys directly from small regional producers."
+    },
+    {
+      "name": "Volunteer nature clean-up day near San Jose (demo)",
+      "price": 0,
+      "co2_kg": 1.0,
+      "community_benefit": "Supports a local conservation group."
+    }
+  ],
+  "kyoto": [
+    {
+      "name": "Community-run walking tour of Kyoto (demo)",
+      "price": 18,
+      "co2_kg": 0.5,
+      "community_benefit": "Guides are local residents; fees stay in the neighbourhood."
+    },
+    {
+      "name": "Local producers market and cooking class, Kyoto (demo)",
+      "price": 45,
+      "co2_kg": 3.0,
+      "community_benefit": "Buys directly from small regional producers."
+    },
+    {
+      "name": "Volunteer nature clean-up day near Kyoto (demo)",
+      "price": 0,
+      "co2_kg": 1.0,
+      "community_benefit": "Supports a local conservation group."
+    }
+  ]
+}

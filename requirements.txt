@@ -1,0 +1,6 @@
+# Bot (Python 3.10 only; Rasa 3.6 does not support 3.11+)
+rasa==3.6.20
+rasa-sdk==3.6.2
+requests>=2.31,<3
+python-dotenv>=1.0,<2
+pytest>=7.4,<8

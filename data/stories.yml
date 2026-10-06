@@ -1,0 +1,25 @@
+version: "3.1"
+
+stories:
+- story: greet then plan a trip
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: plan_trip
+    - action: trip_form
+    - active_loop: trip_form
+
+- story: thanks then goodbye
+  steps:
+    - intent: thanks
+    - action: utter_thanks
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: privacy then delete data
+  steps:
+    - intent: ask_privacy
+    - action: utter_privacy
+    - intent: delete_my_data
+    - action: utter_data_deleted
+    - action: action_restart

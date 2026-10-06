@@ -1,0 +1,5 @@
+# Local development: action server runs on the same machine.
+# No tracker_store is set on purpose: conversations live in memory only
+# (nothing is written to disk), which supports the GDPR requirement.
+action_endpoint:
+  url: "http://localhost:5055/webhook"

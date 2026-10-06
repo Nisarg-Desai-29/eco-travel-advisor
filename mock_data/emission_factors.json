@@ -1,0 +1,14 @@
+{
+  "_note": "Approximate kg CO2e per passenger-km. Order-of-magnitude estimates in line with published national averages (e.g. UK government GHG conversion factors). Used ONLY when the Climatiq API is unavailable. Verify before publishing any figure.",
+  "flight_short": 0.23,
+  "flight_long": 0.28,
+  "train": 0.035,
+  "coach": 0.027,
+  "car": 0.17,
+  "route_factor": {
+    "flight": 1.09,
+    "train": 1.2,
+    "coach": 1.25,
+    "car": 1.25
+  }
+}
