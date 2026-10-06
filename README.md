@@ -49,8 +49,3 @@ docker compose up --build
 Rasa Core → `localhost:5005`, Action server → `localhost:5055`,
 React frontend → `localhost:3000`.
 
-## Notes on API keys
-Climatiq offers 500 free calls/month; Amadeus's self-service sandbox is
-free but rate-limited. Both integrations degrade gracefully to the curated
-mock JSON in `mock_data/` if a key is missing or a call fails, so the bot
-is fully demonstrable with zero paid dependencies.
