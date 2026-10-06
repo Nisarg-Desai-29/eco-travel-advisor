@@ -1,47 +1,56 @@
-# EcoTravel Advisor (Rasa 3.6)
+# EcoTravel Advisor — Rasa Sustainable Trip Planning Chatbot
 
-A Rasa chatbot that plans lower-carbon trips: asks for destination, start city,
-dates, budget and sustainability level, then shows transport emissions
-(green / amber / red), eco-hotel carousel, a recommended plan, offsets,
-local experiences, and hands over to a human advisor with full context.
+## What this is
+A Rasa Open Source chatbot that helps travellers plan lower-carbon trips:
+carbon footprint estimates per transport mode, eco-certified hotel
+suggestions, weighted ranking of options, and escalation to a human travel
+advisor with full conversation context.
 
-## 1. Set up (Windows PowerShell, Python 3.10)
+## Project layout
+```
+domain.yml, config.yml          Rasa Core/NLU configuration
+data/nlu.yml, stories.yml, rules.yml   Training data
+actions/actions.py              Custom action server (Climatiq/Amadeus + fallback)
+mock_data/                      Offline static data used when no API key is set
+tests/test_actions.py           Pytest unit tests (16 tests, all passing offline)
+frontend/src/ChatWidget.jsx     Minimal React chat UI, Rasa REST channel
+Dockerfile, docker-compose.yml  Containerised deployment
+```
 
-1. `cd` into this folder.
-2. `py -3.10 -m venv .venv-rasa`
-3. `.\.venv-rasa\Scripts\Activate.ps1`
-4. `pip install -r requirements.txt`
-5. `python -m spacy download en_core_web_md`
-   (if you get a 404, install the model wheel you already have)
-6. `copy .env.example .env` (keys are optional, see section 6)
-7. `rasa train`
+## Local setup
+```bash
+python -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env   # fill in real API keys, or leave blank to use mock data
 
-## 2. Run the bot (3 windows)
+rasa train
+rasa run actions &          # starts the action server on :5055
+rasa shell                  # or: rasa run --enable-api --cors "*"
+```
 
-Easy way: `.\scripts\start_local.ps1`
+## Running the unit tests
+```bash
+pytest tests/test_actions.py -v
+```
+16/16 tests pass without any live API keys, because `CarbonCalculator` and
+`HotelFetcher` fall back to `mock_data/*.json` whenever a request fails or
+no key is configured.
 
-Manual way:
-1. Window 1 (venv `.venv-rasa`): `rasa run actions`
-2. Window 2 (venv `.venv-rasa`): `rasa run --enable-api --cors "*"`
-3. Window 3 (second venv):
-   `py -3.10 -m venv .venv-ui` then `.\.venv-ui\Scripts\Activate.ps1`
-   then `pip install -r requirements-ui.txt` then `streamlit run frontend/app.py`
-4. Open http://localhost:8501
+## Rasa-native testing
+```bash
+rasa test nlu --nlu data/nlu.yml --cross-validation
+rasa test core --stories tests/test_stories.yml
+```
 
-Quick text test without the UI: `rasa shell` (needs window 1 running).
+## Docker deployment
+```bash
+docker compose up --build
+```
+Rasa Core → `localhost:5005`, Action server → `localhost:5055`,
+React frontend → `localhost:3000`.
 
-## 3. Run the tests (outputs for your report)
-
-Keep `rasa run actions` running in another window for step 3 and 4.
-
-1. Check the data: `rasa data validate`
-2. Unit tests (no internet needed): `pytest tests -v`
-3. Dialogue tests: `rasa test core --stories tests/test_stories.yml`
-   (results go to `results/`: failed_test_stories.yml, confusion matrix)
-4. NLU 80/20 split:
-   `rasa data split nlu` then `rasa test nlu --nlu train_test_split/test_data.yml`
-5. NLU cross-validation:
-   `rasa test nlu --nlu data/nlu.yml --cross-validation --folds 5`
-   (intent_confusion_matrix.png, intent_histogram.png, reports in `results/`)
-6. Latency (needs Rasa + actions running): `python tools/latency_check.py --runs 5`
-
+## Notes on API keys
+Climatiq offers 500 free calls/month; Amadeus's self-service sandbox is
+free but rate-limited. Both integrations degrade gracefully to the curated
+mock JSON in `mock_data/` if a key is missing or a call fails, so the bot
+is fully demonstrable with zero paid dependencies.
